@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+body {
+  background-color: 'red';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 110px;
+  background-color: #4792CF;
+  border-bottom: #FDD02A solid 3px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.right-nav{
+  width: 33%;
+  border-left:#FDD02A solid 3px;
+}
+
+.hamburger-icon {
+  position: relative;
+  top: 20%;
+  left: 1.5%;
+  width: 30%;
+  height: 60px;
+  /* border: #4792CF solid 3px; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  z-index: 101;
+
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30%;
+  height: 100%;
+  padding-left: 20px;
+  background-color: #4792CF;
+  z-index: 100;
+  /* border-right: #FDD02A solid 3px; */
+}
+
+.donate-button {
+  padding-right: 20px;
+  margin-right: 0px;
+  height: 100%;
+  width: 100%;
+  color: #FDD02A;
+  font-size: 30px;
+  font-family: adrianna,
+  sans-serif;
+  font-style: italic;
+  font-weight: 700;
+
+  background-color: #F05684;
+  border: none;
+}
+.donate-button:hover {
+  background-color: #4792CF;
+}
+
+#nav-links {
+position: absolute;
+top: 150px
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FDD02A;
+   font-size: 25px;
+   font-family: adrianna,
+   sans-serif;
+   font-style: italic;
+   font-weight: 700;
+   line-height: 40px;
+   letter-spacing: 1px;
+}
+
+.logo-container {
+  height: 100px;
+  /* width: 40%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-left: #FDD02A solid 3px; */
+}
+
+.logo {
+  height: 150px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+}
+
+/* home styling */
+
+.home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 1000px;
+  width: 100%;
+  background-color: rgba(255, 255, 150, 0.3);
+  border-bottom: #4792CF solid 3px;
 }
